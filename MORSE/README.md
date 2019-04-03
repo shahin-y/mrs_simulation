@@ -1,0 +1,1 @@
+In `./scenarios` are different simulation environments which can be used by a morse builder script.
