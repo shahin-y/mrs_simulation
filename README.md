@@ -2,7 +2,7 @@
 This repository contains resources for the simulation of ROS-Based Multi-Robot Systems. The implementations are based on ROS and MORSE or Gazebo for simulation. Aside from simply running the uses cases, they can be modified to any extent for individual purposes.
 There are two use cases in this repository:
 - The Multi-Robot Exploration Use Case [1,2]  
-   In this scenario two robots have to explore an unknown environment and provide a map of it. Localization and mapping are based on the SLAM algorithm. Each robot maintains an own map and shares it with the other robot. The map from the other map is merged into the own map. With this new map frontiers are determined (frontier-based exploration) to which the robot navigates to further explore the environment. This use case is only implemented in __MORSE__.
+   In this scenario two robots have to explore an unknown environment and provide a map of it. Localization and mapping are based on the SLAM algorithm. Each robot maintains its own map and shares it with the other robot. The map from the other robot is merged into the own map. With this new map, frontiers are determined (frontier-based exploration) to which the robot navigates to further explore the environment. This use case is only implemented in __MORSE__.
 - The Multi-Robot Cleaning Use Case [3]  
    In this use case two robots have to clean a given set of locations of a known environment. Localization is based on AMCL. Each robot traverses an individual sequence of destinations (no actual cleaning operation is simulated). This use case is implemented both in __MORSE__ and __Gazebo__.
 
